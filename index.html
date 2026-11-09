@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Umbrella — guest house in Isani, Tbilisi</title>
+<meta name="description" content="Guest House Umbrella on Gujareti Street 35, Isani, ten minutes from Isani metro. Front desk open day and night. Rated 8.6 by 248 guests. Book directly on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@800&family=Public+Sans:wght@400;600&family=Noto+Sans+Georgian:wght@400;600;800&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="#top">Guest House Umbrella</a>
+  <nav class="nav" aria-label="Main">
+    <a href="#book" data-i18n="nav.book">Book</a>
+    <a href="#nearby" data-i18n="nav.nearby">Getting around</a>
+    <a href="#faq" data-i18n="nav.faq">Questions</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="langs" role="group" aria-label="Language">
+    <button type="button" data-lang="ka">ქარ</button>
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="h1">
+  <h1 id="h1" class="name" aria-label="Umbrella, guest house in Isani, Tbilisi">
+    <span class="w">Umbrella</span>
+    <span class="frame shutter"><img src="assets/sameba-cathedral-tbilisi-11.jpg" width="1920" height="1280" alt="Tbilisi at night with the lit Sameba Cathedral above Avlabari and Isani"></span>
+    <span class="w">Isani</span>
+  </h1>
+  <div class="hero-foot">
+    <p class="lead" data-i18n="hero.lead">A guest house on Gujareti Street 35, ten minutes on foot from Isani metro. The front desk is open day and night. Rated 8.6 by 248 guests.</p>
+    <a class="btn" href="#book" data-i18n="hero.cta">Book on WhatsApp</a>
+  </div>
+</section>
+
+<section class="about wrap" aria-labelledby="about-h">
+  <h2 id="about-h" class="h2" data-i18n="about.h">The house</h2>
+  <ul class="facts reveal">
+    <li data-i18n="about.f1">Isani, Tbilisi</li>
+    <li data-i18n="about.f2">Front desk 24 hours</li>
+    <li data-i18n="about.f3">Free parking</li>
+  </ul>
+  <div class="statement reveal">
+    <p><img class="drop" src="assets/isani-metro-station-tbilisi-georgia-1.jpg" width="1920" height="1440" alt="The curved concrete canopy of Isani metro station" loading="lazy"><strong>Umbrella</strong> <span data-i18n="about.p1">is ten minutes from Isani metro: one stop to Avlabari, two to the old town.</span></p>
+    <p class="soft" data-i18n="about.p2">Free Wi-Fi and parking, a front desk open at any hour, help with day trips and an airport transfer on request. Arrive late, the door is open.</p>
+  </div>
+  <figure class="about-pic reveal"><img class="drift" src="assets/old-tbilisi-avlabari-georgia.jpg" width="1920" height="1276" alt="A street of brick houses in Avlabari, next door to Isani" loading="lazy"></figure>
+</section>
+
+<section id="book" class="book" aria-labelledby="book-h">
+  <div class="wrap book-grid">
+    <div>
+      <h2 id="book-h" class="h-big" data-i18n="book.h">Ask for your dates</h2>
+      <p class="book-p" data-i18n="book.p">Pick the dates and send them straight to the house. No booking fee, no middleman.</p>
+    </div>
+    <form class="booker" id="booker" action="https://wa.me/995568771786" method="get" target="_blank">
+      <div class="row3">
+        <label><span data-i18n="book.in">Check-in</span><input type="date" id="d-in" required></label>
+        <label><span data-i18n="book.out">Check-out</span><input type="date" id="d-out" required></label>
+        <label><span data-i18n="book.g">Guests</span>
+          <select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select>
+        </label>
+      </div>
+      <p class="nights" aria-live="polite"><span id="n-count">2</span> <span data-i18n="book.nights">nights</span></p>
+      <label class="check"><input type="checkbox" id="shuttle"><span data-i18n="book.shuttle">I need the airport transfer</span></label>
+      <label class="check"><input type="checkbox" id="late"><span data-i18n="book.late">I arrive late at night</span></label>
+      <p class="pv-label" data-i18n="book.pv">Your message</p>
+      <p class="preview" id="preview">Hello! I'd like a room for 2 guests. Is it available?</p>
+      <input type="hidden" name="text" id="wa-text">
+      <button class="btn btn-inv" type="submit" data-i18n="book.send">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="show" aria-labelledby="show-h">
+  <h2 id="show-h" class="h2 wrap" data-i18n="show.h">Up the hill and across the river</h2>
+  <div class="band reveal">
+    <figure class="p p1">
+      <img src="assets/sameba-cathedral-tbilisi-10.jpg" width="1920" height="1280" alt="Sameba Cathedral lit up over the city at dusk" loading="lazy">
+      <figcaption data-i18n="show.t">Sameba Cathedral</figcaption>
+    </figure>
+    <figure class="p p2"><img src="assets/tbilisi-avlabari-metekhi-church-georgia.jpg" width="1920" height="1276" alt="Metekhi church on the cliff above the river" loading="lazy"></figure>
+    <figure class="p p3"><img src="assets/rike-park-tbilisi-georgia-2018-01.jpg" width="1920" height="1080" alt="Rike Park on the river bank" loading="lazy"></figure>
+    <figure class="p p4"><img src="assets/isani-metro-station-tbilisi-georgia-2.jpg" width="1920" height="2560" alt="Isani metro station" loading="lazy"></figure>
+  </div>
+  <p class="cap wrap" data-i18n="show.c">Sameba Cathedral, Metekhi church, Rike Park and Isani metro.</p>
+</section>
+
+<section class="proof wrap" aria-labelledby="proof-h">
+  <h2 id="proof-h" class="h-big"><span data-i18n="proof.h1">The house</span><br><span class="indent" data-i18n="proof.h2">in facts</span></h2>
+  <table class="facts-table reveal">
+    <tbody>
+      <tr><th scope="row" data-i18n="t.r1a">Guest rating</th><td class="big">8.6 / 10</td><td data-i18n="t.r1c">248 reviews, HotelsCombined</td></tr>
+      <tr><th scope="row" data-i18n="t.r2a">Address</th><td data-i18n="t.r2b">Gujareti St 35</td><td data-i18n="t.r2c">Isani, Tbilisi</td></tr>
+      <tr><th scope="row" data-i18n="t.r3a">Metro</th><td data-i18n="t.r3b">Isani, about 10 min on foot</td><td data-i18n="t.r3c">About 760 m</td></tr>
+      <tr><th scope="row" data-i18n="t.r4a">Front desk</th><td data-i18n="t.r4b">Open 24 hours</td><td></td></tr>
+      <tr><th scope="row" data-i18n="t.r5a">Airport transfer</th><td data-i18n="t.r5b">On request</td><td data-i18n="t.r5c">Airport about 10.5 km</td></tr>
+      <tr><th scope="row" data-i18n="t.r6a">Wi-Fi and parking</th><td data-i18n="t.r6b">Free</td><td></td></tr>
+      <tr><th scope="row" data-i18n="t.r7a">Day trips</th><td data-i18n="t.r7b">Arranged at the desk</td><td></td></tr>
+      <tr><th scope="row" data-i18n="t.r8a">Payment</th><td data-i18n="t.r8b">Cash, in lari</td><td></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="nearby" class="nearby" aria-labelledby="near-h">
+  <div class="col">
+    <h2 id="near-h" class="giant" data-i18n="near.h">Getting around</h2>
+    <details open>
+      <summary data-i18n="near.b1">On foot</summary>
+      <ul>
+        <li><span data-i18n="near.b1i1">Isani metro station</span><span data-i18n="w.10">about 10 min</span></li>
+        <li><span data-i18n="near.b1i2">Sameba Cathedral</span><span data-i18n="w.17">about 1.7 km</span></li>
+      </ul>
+    </details>
+    <details>
+      <summary data-i18n="near.b2">By metro from Isani</summary>
+      <ul>
+        <li><span data-i18n="near.b2i1">Avlabari, Metekhi, Rike Park</span><span data-i18n="w.s1">1 stop</span></li>
+        <li><span data-i18n="near.b2i2">Liberty Square, old town</span><span data-i18n="w.s2">2 stops</span></li>
+        <li><span data-i18n="near.b2i3">Rustaveli Avenue</span><span data-i18n="w.s3">3 stops</span></li>
+      </ul>
+    </details>
+    <details>
+      <summary data-i18n="near.b3">From the airport</summary>
+      <ul>
+        <li><span data-i18n="near.b3i1">Transfer from the house</span><span data-i18n="w.req">on request</span></li>
+        <li><span data-i18n="near.b3i2">Taxi</span><span data-i18n="w.20">about 20 min</span></li>
+      </ul>
+    </details>
+    <details>
+      <summary data-i18n="near.b4">Out of the city</summary>
+      <ul>
+        <li><span data-i18n="near.b4i1">Day trips: Mtskheta, Kazbegi, Kakheti</span><span data-i18n="w.desk">ask at the desk</span></li>
+      </ul>
+    </details>
+  </div>
+  <figure class="near-pic reveal"><img class="drift" src="assets/isani-metro-station-tbilisi-georgia-2.jpg" width="1920" height="2560" alt="Isani metro station, ten minutes from the house" loading="lazy"></figure>
+</section>
+
+<section id="faq" class="faq wrap" aria-labelledby="faq-h">
+  <h2 id="faq-h" class="h-big" data-i18n="faq.h">Before you come</h2>
+  <div class="qs">
+    <details><summary data-i18n="q1">How do I book?</summary><p data-i18n="a1">Send your dates on WhatsApp to +995 568 77 17 86. The house answers and confirms the room.</p></details>
+    <details><summary data-i18n="q2">How do I pay?</summary><p data-i18n="a2">In cash, in Georgian lari, at the house.</p></details>
+    <details><summary data-i18n="q3">My flight lands at night. Can I check in?</summary><p data-i18n="a3">Yes. The front desk is open 24 hours. Tick “I arrive late” in the form so the house knows.</p></details>
+    <details><summary data-i18n="q4">How do I get here from the airport?</summary><p data-i18n="a4">Ask for the transfer in the form, or take a taxi: about 20 minutes.</p></details>
+    <details><summary data-i18n="q5">How do I get to the old town?</summary><p data-i18n="a5">Walk ten minutes to Isani metro. Liberty Square and the old town are two stops away.</p></details>
+    <details><summary data-i18n="q6">Can under-18s stay on their own?</summary><p data-i18n="a6">No. Guests under 18 stay with an adult.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h" class="c-say" data-i18n="c.say">Write to the house about dates, a late arrival or the airport transfer.</h2>
+  <a class="phone" href="https://wa.me/995568771786">+995 568 77 17 86</a>
+  <div class="c-foot">
+    <p data-i18n="c.addr">Gujareti St 35, Isani, Tbilisi</p>
+    <p><a href="tel:+995599310403">+995 599 31 04 03</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="fcols">
+    <div><p class="fh" data-i18n="f.addr">Address</p><p data-i18n="c.addr">Gujareti St 35, Isani, Tbilisi</p></div>
+    <div><p class="fh" data-i18n="f.pages">Pages</p><p><a href="#book" data-i18n="nav.book">Book</a><br><a href="#nearby" data-i18n="nav.nearby">Getting around</a><br><a href="#faq" data-i18n="nav.faq">Questions</a></p></div>
+    <div><p class="fh" data-i18n="f.phones">Phone</p><p><a href="https://wa.me/995568771786">+995 568 77 17 86</a><br><a href="tel:+995599310403">+995 599 31 04 03</a></p></div>
+    <div><p class="fh" data-i18n="f.pay">Payment</p><p data-i18n="t.r8b">Cash, in lari</p></div>
+  </div>
+  <p class="fmark" aria-hidden="true">Umbrella</p>
+  <p class="legal" data-i18n="f.legal">Concept website prepared as a proposal for Guest House Umbrella. Not the official site.</p>
+  <p class="credits">Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=16996366">“Isani Metro Station 1”</a> and <a href="https://commons.wikimedia.org/w/index.php?curid=16996378">“Isani Metro Station 2”</a> by Brejnev, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=73148445">“Sameba Cathedral, Tbilisi 11”</a> and <a href="https://commons.wikimedia.org/w/index.php?curid=73148439">“Sameba Cathedral, Tbilisi 10”</a> by Mostafameraji, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=116528472">“Tbilisi, Avlabari, Metekhi Church”</a> and <a href="https://commons.wikimedia.org/w/index.php?curid=116528474">“Old Tbilisi, Avlabari”</a> by Vyacheslav Argenberg, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=69307352">“Rike Park, Tbilisi, 2018 01”</a> by Kober, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. All via Wikimedia Commons.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
